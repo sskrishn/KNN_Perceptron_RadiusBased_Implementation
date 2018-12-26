@@ -37,7 +37,7 @@ b) Also used 2 different versions which includes weighted version of knn. For on
 
 •	Followed same process of KNN. (To calculate range of R values, I have calculated distance matrix which will contain the distances of all features. This is because when we select the different radii with greater than maximum of distances of all points in given data, all test data given to classifier will result to same set of predictions always. So I have used concept similar to binning but not binning, to get the range of 10 r values for which I have taken max and min distances of all points and got 10 equally spaced r values. R ranging from 0.11 to 1.07 in equally spaced values.)
 
-**Observations: **
+**Observations:**
 
 In conclusion we can state that as the given dataset is not linearly separable and also from the graphs that the KNN with 9 nearest neighbors with options Euclidean and normalKNN using 5 different trails validation gives the best classifier to predict the stress class with hit rate of 0.925. My opinion on pros and cons of the classifiers are that hypothesis for KNN is complex and involves more cost whereas Perceptron always gives straight line equation and comes into excellent use when data is linearly separable. But KNN gives good results as it provides curve fit instead of line for non-linear separable data. KNN is easy to implement. It does not involves training whereas perceptron involves training. So while testing or predicting, KNN takes more time when compared to perceptron. My recommendation is to get good accuracy at cost of time prefer KNN. Also KNN giving good results compared to Radius based classifier.
 
