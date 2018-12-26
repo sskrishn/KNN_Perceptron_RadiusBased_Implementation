@@ -4,6 +4,7 @@
 To come up with a classifier that can predict the stress class of new couples based on Income of Husband and Income of wife for the given data set which contains 399 records with their income as Features and self-assessed level of stress as target variable. We are consider KNN and Single Perceptron classifiers. Also to same dataset we need to implement a classification algorithm similar to knn but instead of k we will use radius which will be used to make a decision based on majority of those points.
 
 # Strategy (for KNN):
+*File : knn_perceptron_implementation.ipynb*
 
 •	As data contain only two features (independent variables) there is no need of dimension deduction. 
 
@@ -22,6 +23,8 @@ a) I have used 3 different distances Manhattan, Euclidean and Chebyshev for calc
 b) Also used 2 different versions which includes weighted version of knn. For one version, we will calculate distances of test point with other train points and predict it using max count of labels of k nearest neighbors. For other version, Inverse of square of distances is used as metric to decide the class of test point. In my method, normalKNN and weightedKNN are the options to have different versions of KNN.
 
 # Strategy (For perceptron):
+*File : knn_perceptron_implementation.ipynb*
+
 
 •	For perceptron also we need to scale/normalize the data as weights updating involves the product of input features and so it should be small else take long steps in gradient descent.
 
@@ -30,6 +33,7 @@ b) Also used 2 different versions which includes weighted version of knn. For on
 •	Also we have considered Learning rate = 0.01 which is constant throughout the process.
 
 # Strategy (For Radius based):
+*File : knn_radiusBased_implementation.ipynb*
 
 •	Followed same process of KNN. (To calculate range of R values, I have calculated distance matrix which will contain the distances of all features. This is because when we select the different radii with greater than maximum of distances of all points in given data, all test data given to classifier will result to same set of predictions always. So I have used concept similar to binning but not binning, to get the range of 10 r values for which I have taken max and min distances of all points and got 10 equally spaced r values. R ranging from 0.11 to 1.07 in equally spaced values.)
 
